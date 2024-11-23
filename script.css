@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+justify-content: center;
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+background-color: #1e90ff;
+gap: 10px;
+}
+
+h1 , #status{
+    color: white;
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin :10px 0;
+}
+
+.card{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+
+}
