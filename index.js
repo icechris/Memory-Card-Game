@@ -84,8 +84,8 @@ function checkMatch(){
 
 function disableCards(){
 
-    firstCard.removeEventListener("click", ()=> flipCard(card));
-    secondCard.removeEventListener("click", ()=> flipCard(card));
+    firstCard.removeEventListener("click",  flipCard);
+    secondCard.removeEventListener("click",  flipCard);
     resetBoard();
 
 
@@ -111,13 +111,13 @@ function restartGame(){
     restartButton.style.display = 'none';
 
 
-     shuffledSymbols = symbols.sort(()=> Math.random - 0.5);
+     shuffledSymbols = symbols.sort(()=> Math.random() - 0.5);
 
     firstCard = null;
      secondCard = null;
      lockBoard = false;
      matchedPairs = 0;
-    statusText.textContent =='Find all all pairs';
+    statusText.textContent ='Find all all pairs';
 
 shuffledSymbols.forEach((symbol)=>{
 
